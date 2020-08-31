@@ -11,9 +11,21 @@
     <!-- Font Awesomme CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 
-    <!-- CSS pour le scroll back button -->
+    <!-- Google font Lora -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+
     <style>
 
+    * {
+      font-family: 'Lato', sans-serif;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Lora', serif;
+    }
+
+    /* CSS pour le scroll back button */
       #myBtn {
         display: none;
         position: fixed;
@@ -23,22 +35,23 @@
         font-size: 18px;
         border: none;
         outline: none;
-        background-color: hsl(171, 100%, 41%);
-        color: white;
+        background-color: hsl(48, 100%, 67%);
+        color: black;
         cursor: pointer;
         padding: 15px;
         border-radius: 4px;
       }
 
       #myBtn:hover {
-        background-color:hsl(171, 100%, 96%);
+        background-color:hsl(48, 100%, 96%);
         color: black;
       }
       </style>
 
+
   </head>
 
-  <body>
+  <body class="is-family-sans-serif">
 
     <button onclick="topFunction()" id="myBtn" title="Retour en haut">Retour en haut</button>
 
@@ -132,9 +145,11 @@
                   <a href="https://marivel.herokuapp.com/" target="_blank">https://marivel.herokuapp.com/</a>
                 </div>
                 <div class="column">
-                  <figure class="image is-128x128">
-                    <img src="Screenshot_2020_08_30_Marivel.jpg">
-                  </figure>
+                  <a href="https://marivel.herokuapp.com/" target="_blank">
+                    <figure class="image is-128x128">
+                      <img src="Screenshot_2020_08_30_Marivel.jpg">
+                    </figure>
+                  </a>
                 </div>
               </div>
             </article>
