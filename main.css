@@ -1,0 +1,39 @@
+/* CAROUSEL */
+.carousel {
+  position: relative;
+
+}
+
+.carousel__container::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.carousel__item {
+  float: left;
+}
+
+
+.carousel__next, .carousel__prev {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: black;
+  border-radius: 50%;
+  top: 50%;
+  margin-top: -20px;
+  right: 0px;
+  box-shadow: 0 15px 35px #3232321a, 0 5px 15px #0000001a;
+  cursor: pointer;
+  transiition: transform 0.3s;
+}
+
+.carousel__next:hover, .carousel__prev:hover {
+  transform: scale(1.2);
+}
+
+.carousel__prev {
+  right: auto;
+  left: -20px;
+}
